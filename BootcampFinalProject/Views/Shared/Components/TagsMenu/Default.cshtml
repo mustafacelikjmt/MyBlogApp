@@ -1,0 +1,11 @@
+﻿@model List<Tag>
+
+<div class="aside-block">
+    <h3 class="aside-title">Tags</h3>
+    <ul class="aside-tags list-unstyled">
+        @foreach (var tag in Model)
+        {
+            <li><a href="/posts/tag/@tag.Url" class="btn btn-outline-light btn-sm">@tag.Text</a></li>
+        }
+    </ul>
+</div>
