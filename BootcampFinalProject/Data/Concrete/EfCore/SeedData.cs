@@ -8,6 +8,8 @@ namespace BootcampFinalProject.Data.Concrete.EfCore
     {
         private const string adminUser = "admin";
         private const string adminPassword = "admin123";
+        private const string modUser = "wade";
+        private const string modPassword = "mod123";
 
         public static async Task SeedDataBlog(IApplicationBuilder app)
         {
@@ -19,6 +21,7 @@ namespace BootcampFinalProject.Data.Concrete.EfCore
                 var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<AppRole>>();
 
                 var user = await userManager.FindByNameAsync(adminUser);
+                var user2 = await userManager.FindByNameAsync(modUser);
                 if (context.Database.GetPendingMigrations().Any())
                 {
                     context.Database.Migrate();
@@ -26,6 +29,10 @@ namespace BootcampFinalProject.Data.Concrete.EfCore
                 if (!await roleManager.RoleExistsAsync("Admin"))
                 {
                     await roleManager.CreateAsync(new AppRole("Admin"));
+                }
+                if (!await roleManager.RoleExistsAsync("Moderator"))
+                {
+                    await roleManager.CreateAsync(new AppRole("Moderator"));
                 }
                 if (user == null)
                 {
@@ -39,7 +46,6 @@ namespace BootcampFinalProject.Data.Concrete.EfCore
                         EmailConfirmed = true
                     };
                     IdentityResult result = await userManager.CreateAsync(user, adminPassword);
-
                     if (user != null && !await userManager.IsInRoleAsync(user, "Admin"))
                     {
                         await userManager.AddToRoleAsync(user, "Admin");
@@ -48,6 +54,31 @@ namespace BootcampFinalProject.Data.Concrete.EfCore
                     {
                         // Hataları günlüğe kaydet
                         foreach (var error in result.Errors)
+                        {
+                            Console.WriteLine($"Error: {error.Description}");
+                        }
+                    }
+                }
+                if (user2 == null)
+                {
+                    user2 = new AppUser
+                    {
+                        FullName = "Wade Warren",
+                        UserName = modUser,
+                        Email = "info@wade.com",
+                        PhoneNumber = "05451544122",
+                        Image = "person-2.jpg",
+                        EmailConfirmed = true
+                    };
+                    IdentityResult result2 = await userManager.CreateAsync(user2, modPassword);
+                    if (user2 != null && !await userManager.IsInRoleAsync(user2, "Moderator"))
+                    {
+                        await userManager.AddToRoleAsync(user2, "Moderator");
+                    }
+                    if (!result2.Succeeded)
+                    {
+                        // Hataları günlüğe kaydet
+                        foreach (var error in result2.Errors)
                         {
                             Console.WriteLine($"Error: {error.Description}");
                         }
@@ -71,6 +102,22 @@ namespace BootcampFinalProject.Data.Concrete.EfCore
                 if (!context.Posts.Any())
                 {
                     context.Posts.AddRange(
+                        new Post
+                        {
+                            Title = "What is the son of Football Coach John Gruden, Deuce Gruden doing Now?",
+                            Description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni voluptates dolore. Tenetur fugiat voluptates quas.",
+                            Url = "single",
+                            Content = "Burası content (içerik) bölümü",
+                            Image = "post-landscape-6.jpg",
+                            IsActive = true,
+                            PublishedOn = DateTime.Now.AddDays(-3),
+                            Tags = context.Tags.Where(x => x.Text == "Business").ToList(),
+                            UserId = user2.UserId,
+                            Comments = new List<Comment>
+                            {
+                                new Comment{Text="Güzel bir blog.",PublishedOn = DateTime.Now.AddDays(-10), UserId=user.UserId},
+                            }
+                        },
                         new Post
                         {
                             Title = "Asp Net Core",

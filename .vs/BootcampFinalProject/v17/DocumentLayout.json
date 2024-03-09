@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|c:\\users\\musta\\desktop\\proje\\myblogapp\\bootcampfinalproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|solutionrelative:bootcampfinalproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|c:\\users\\musta\\desktop\\proje\\myblogapp\\bootcampfinalproject\\views\\posts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|solutionrelative:bootcampfinalproject\\views\\posts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|c:\\users\\musta\\desktop\\proje\\myblogapp\\bootcampfinalproject\\models\\smtpemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|solutionrelative:bootcampfinalproject\\models\\smtpemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|c:\\users\\musta\\desktop\\proje\\myblogapp\\bootcampfinalproject\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|solutionrelative:bootcampfinalproject\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|c:\\users\\musta\\desktop\\proje\\myblogapp\\bootcampfinalproject\\views\\posts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|solutionrelative:bootcampfinalproject\\views\\posts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|c:\\users\\musta\\desktop\\proje\\myblogapp\\bootcampfinalproject\\views\\userinterface\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5D114FA-280F-47EE-BD25-FD1D9F923A3F}|BootcampFinalProject\\BootcampFinalProject.csproj|solutionrelative:bootcampfinalproject\\views\\userinterface\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 255,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,28 +78,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\appsettings.json",
-              "RelativeDocumentMoniker": "BootcampFinalProject\\appsettings.json",
-              "ToolTip": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\appsettings.json",
-              "RelativeToolTip": "BootcampFinalProject\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-01T14:48:28.259Z",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\Views\\Posts\\Details.cshtml",
+              "RelativeDocumentMoniker": "BootcampFinalProject\\Views\\Posts\\Details.cshtml",
+              "ToolTip": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\Views\\Posts\\Details.cshtml",
+              "RelativeToolTip": "BootcampFinalProject\\Views\\Posts\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAACVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-08T17:24:17.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SmtpEmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\Models\\SmtpEmailSender.cs",
-              "RelativeDocumentMoniker": "BootcampFinalProject\\Models\\SmtpEmailSender.cs",
-              "ToolTip": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\Models\\SmtpEmailSender.cs",
-              "RelativeToolTip": "BootcampFinalProject\\Models\\SmtpEmailSender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Title": "PostsController.cs",
+              "DocumentMoniker": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\Controllers\\PostsController.cs",
+              "RelativeDocumentMoniker": "BootcampFinalProject\\Controllers\\PostsController.cs",
+              "ToolTip": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\Controllers\\PostsController.cs",
+              "RelativeToolTip": "BootcampFinalProject\\Controllers\\PostsController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACMAAAB7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T14:48:11.359Z"
+              "WhenOpened": "2024-03-08T17:11:42.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\Views\\Posts\\Index.cshtml",
+              "RelativeDocumentMoniker": "BootcampFinalProject\\Views\\Posts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\Views\\Posts\\Index.cshtml",
+              "RelativeToolTip": "BootcampFinalProject\\Views\\Posts\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-05T07:18:40.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\Views\\UserInterface\\Search.cshtml",
+              "RelativeDocumentMoniker": "BootcampFinalProject\\Views\\UserInterface\\Search.cshtml",
+              "ToolTip": "C:\\Users\\musta\\Desktop\\Proje\\MyBlogApp\\BootcampFinalProject\\Views\\UserInterface\\Search.cshtml",
+              "RelativeToolTip": "BootcampFinalProject\\Views\\UserInterface\\Search.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAABYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T15:45:36.595Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -283,4 +283,3 @@ C:\Users\musta\Desktop\Proje\MyBlogApp\BootcampFinalProject\obj\Debug\net8.0\ref
 C:\Users\musta\Desktop\Proje\MyBlogApp\BootcampFinalProject\obj\Debug\net8.0\BootcampFinalProject.pdb
 C:\Users\musta\Desktop\Proje\MyBlogApp\BootcampFinalProject\obj\Debug\net8.0\BootcampFinalProject.genruntimeconfig.cache
 C:\Users\musta\Desktop\Proje\MyBlogApp\BootcampFinalProject\obj\Debug\net8.0\ref\BootcampFinalProject.dll
-C:\Users\musta\Desktop\Proje\MyBlogApp\BootcampFinalProject\bin\Debug\net8.0\secret.json

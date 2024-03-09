@@ -33,8 +33,9 @@ namespace BootcampFinalProject.Controllers
                 posts = posts.Where(x => x.Tags.Any(t => t.Url == tag));
             }
 
-            return View(new PostViewModel { Posts = await posts.ToListAsync() });
+            return View(new PostViewModel { Posts = await posts.Include(x => x.User).Include(x => x.Tags).ToListAsync() });
         }
+
         public async Task<IActionResult> Details(string url)
         {
             return View(await _postRepository.Posts
@@ -44,6 +45,7 @@ namespace BootcampFinalProject.Controllers
                 .ThenInclude(x => x.User)
                 .FirstOrDefaultAsync(p => p.Url == url));
         }
+
         [HttpPost]
         public async Task<JsonResult> AddComment(int PostId, string Text)
         {
@@ -70,6 +72,7 @@ namespace BootcampFinalProject.Controllers
                 avatar
             });
         }
+
         [Authorize]
         public IActionResult Create()
         {
@@ -97,6 +100,7 @@ namespace BootcampFinalProject.Controllers
             }
             return View(model);
         }
+
         [Authorize]
         public async Task<IActionResult> List()
         {
