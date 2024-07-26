@@ -1,0 +1,11 @@
+﻿@model List<Post>
+
+<div class="aside-block">
+    <h3 class="aside-title">New Post</h3>
+    <ul class="aside-tags list-unstyled">
+        @foreach (var post in Model)
+        {
+            <li><a href="/posts/details/@post.Url"><h6 class="mb-0">@post.Title</h6></a></li>
+        }
+    </ul>
+</div>
